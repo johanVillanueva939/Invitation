@@ -1,1 +1,83 @@
 @import "tailwindcss";
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../public/assets/fonts/Montserrat.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'vertopal';
+    src: url('../public/assets/fonts/vertopal.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+:root {
+    --color-primary: #c78e3e;
+    --color-secondary: #63471e;
+    --color-accent: #CBA458;
+    --color-background-secondary: #B88763;
+    --color-background: #FCFEFF;
+    --color-text: #555555;
+}
+
+.color-background-t {
+    background: linear-gradient(135deg, #ffffff 0%, #fff8e7 40%, #f6ebd3 100%);
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, var(--color-secondary) 0%, var(--color-primary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gradient-text-top {
+    background: linear-gradient(to top, var(--color-secondary) 0%, var(--color-primary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.gradient-bg {
+    background: linear-gradient(90deg, var(--color-secondary) 0%, var(--color-primary) 100%);
+}
+
+.icon-rings {
+    width: 100px;
+    /* ajusta el tamaño */
+    height: 100px;
+    background: linear-gradient(90deg, var(--color-secondary) 0%, var(--color-primary) 100%);
+    /* gradiente */
+
+    -webkit-mask-image: url("../public/assets/anillos-de-boda.svg");
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    -webkit-mask-position: center;
+
+    mask-image: url("../public/assets/anillos-de-boda.svg");
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    mask-position: center;
+}
+
+.icon-love {
+    width: 50px;
+    /* ajusta el tamaño */
+    height: 50px;
+    background: linear-gradient(90deg, var(--color-secondary) 0%, var(--color-primary) 100%);
+    /* gradiente */
+
+    -webkit-mask-image: url("../public/assets/amor.svg");
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    -webkit-mask-position: center;
+
+    mask-image: url("../public/assets/amor.svg");
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    mask-position: center;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
