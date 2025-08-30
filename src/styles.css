@@ -77,7 +77,11 @@
     mask-size: contain;
     mask-position: center;
 }
-
+.img-prin{
+    background: url("../public/assets/gs.webp") no-repeat ;
+    background-position: center center;
+    background-size: cover;
+}
 body {
     font-family: 'Montserrat', sans-serif;
 }

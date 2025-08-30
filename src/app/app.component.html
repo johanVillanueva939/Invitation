@@ -2,7 +2,7 @@
     <section class="flex flex-col items-center justify-center relative gap-3">
         <div>
             <img src="assets/rode.webp" alt="" class="w-[195px] absolute top-[42%] right-1/2 left-1/2 transform -translate-1/2">
-            <img src="https://apexartlab.com/wp-content/uploads/2021/02/0177-L-GoldenGates.jpg" alt="" class="w-[160px] h-[160px] rounded-full">
+            <div class="img-prin w-[160px] h-[160px] rounded-full"></div>
         </div>
         <h3 class="gradient-text-top text-[18px]">12.09.2025</h3>
     </section>
@@ -96,7 +96,7 @@
     <div class="mt-4">
         <button (click)="toggleMusic()"
             class="p-4 fixed bottom-0 left-0 transition active:scale-95">
-            <fa-icon [icon]="isPlaying ? faPause : faPlay" size="2x"></fa-icon>
+            <fa-icon [icon]="isPlaying ? faPause : faPlay" size="2x" class="text-[var(--color-text)]"></fa-icon>
         </button>
 
         <!-- Audio oculto -->
@@ -104,8 +104,8 @@
     </div>
     <div *ngIf="showOverlay" class="fixed inset-0 flex items-center justify-center bg-black z-50">
         <button (click)="toggleMusic()"
-            class="p-4 shadow-xl transition active:scale-95">
-            <fa-icon [icon]="faPlay" size="3x"></fa-icon>
+            class="p-[20px_15px] gradient-bg rounded-full transition active:scale-95">
+            <fa-icon [icon]="faPlay" size="3x" class="text-[var(--color-background)]"></fa-icon>
         </button>
     </div>
 
